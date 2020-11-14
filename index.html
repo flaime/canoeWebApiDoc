@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Swagger Petstore v1.0.0</title>
+    <title>Kanot.lice API v1.0.0</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -285,7 +285,7 @@
 
   </head>
 
-  <body class="index" data-languages="[&quot;python&quot;,&quot;ruby&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;kotlin&quot;,&quot;ruby&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -295,7 +295,8 @@
     <div class="toc-wrapper">
       <img src="images/logo-1e815a84.png" class="logo" alt="" />
         <div class="lang-selector">
-              <a href="#" data-language-name="python">Python</a>
+              <a href="#" data-language-name="shell">Shell</a>
+              <a href="#" data-language-name="kotlin">Kotlin</a>
               <a href="#" data-language-name="ruby">Ruby</a>
         </div>
         <div class="search">
@@ -304,13 +305,13 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#swagger-petstore" class="toc-h1 toc-link" data-title="Swagger Petstore v1.0.0">Swagger Petstore v1.0.0</a>
+            <a href="#kanot-lice-api" class="toc-h1 toc-link" data-title="Kanot.lice API v1.0.0">Kanot.lice API v1.0.0</a>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#swagger-petstore-pet" class="toc-h1 toc-link" data-title="pet">pet</a>
+            <a href="#kanot-lice-api-pet" class="toc-h1 toc-link" data-title="pet">pet</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#addpet" class="toc-h2 toc-link" data-title="addPet">addPet</a>
@@ -339,7 +340,7 @@
               </ul>
           </li>
           <li>
-            <a href="#swagger-petstore-store" class="toc-h1 toc-link" data-title="store">store</a>
+            <a href="#kanot-lice-api-store" class="toc-h1 toc-link" data-title="store">store</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#getinventory" class="toc-h2 toc-link" data-title="getInventory">getInventory</a>
@@ -356,7 +357,7 @@
               </ul>
           </li>
           <li>
-            <a href="#swagger-petstore-user" class="toc-h1 toc-link" data-title="user">user</a>
+            <a href="#kanot-lice-api-user" class="toc-h1 toc-link" data-title="user">user</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#createuser" class="toc-h2 toc-link" data-title="createUser">createUser</a>
@@ -417,22 +418,22 @@
       <div class="content">
         <!-- Generator: Widdershins v4.0.1 -->
 
-<h1 id="swagger-petstore">Swagger Petstore v1.0.0</h1>
+<h1 id="kanot-lice-api">Kanot.lice API v1.0.0</h1>
 
 <blockquote>
 <p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
 </blockquote>
 
-<p>This is a sample server Petstore server.  You can find out more about     Swagger at <a href="http://swagger.io">http://swagger.io</a> or on <a href="http://swagger.io/irc/">irc.freenode.net, #swagger</a>.      For this sample, you can use the api key <code>special-key</code> to test the authorization     filters.</p>
+<p>Welcome to the kanot.live API by linus! You can use our API to access kanot.live API endpoints, which can get information on various competitions and for them races, people and so on. To show the application go to <a href="https://kanot.live">kanot.live</a>. Good to know is that the site is updated fairly regularly usually every 30 second with the latest data from the competitions that is active.</p>
 
 <p>Base URLs:</p>
 
 <ul>
-<li><p><a href="https://petstore.swagger.io/v2">https://petstore.swagger.io/v2</a></p></li>
-<li><p><a href="http://petstore.swagger.io/v2">http://petstore.swagger.io/v2</a></p></li>
+<li><p><a href="https://kanot.live/">https://kanot.live/</a></p></li>
+<li><p><a href="http://kanot.live/">http://kanot.live/</a></p></li>
 </ul>
 
-<p><a href="http://swagger.io/terms/">Terms of service</a>
+<p><a href="http://kanot.live/terms/">Terms of service</a>
 Email: <a href="mailto:apiteam@swagger.io">Support</a> 
 License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a></p>
 <h1 id='authentication'>Authentication</h1>
@@ -469,26 +470,17 @@ License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a
 </ul></li>
 </ul>
 
-<h1 id="swagger-petstore-pet">pet</h1>
-
-<p>Everything about your Pets</p>
-
-<p><a href="http://swagger.io">Find out more</a></p>
+<h1 id="kanot-lice-api-pet">pet</h1>
 <h2 id='addpet'>addPet</h2>
 <p><a id="opIdaddPet"></a></p>
 
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/pet <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -498,7 +490,7 @@ License: <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/pet'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/pet'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -594,15 +586,10 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> PUT https://kanot.live/pet <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -612,7 +599,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">put</span> <span class="s1">'https://petstore.swagger.io/v2/pet'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">put</span> <span class="s1">'https://kanot.live/pet'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -720,19 +707,10 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/findByStatus'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
-  <span class="s">'status'</span><span class="p">:</span> <span class="p">[</span>
-  <span class="s">"available"</span>
-<span class="p">]</span>
-<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/pet/findByStatus?status<span class="o">=</span>available <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -742,7 +720,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/pet/findByStatus'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/pet/findByStatus'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="s1">'status'</span> <span class="o">=&gt;</span> <span class="s1">'array[string]'</span>
 <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
@@ -981,19 +959,10 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/findByTags'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
-  <span class="s">'tags'</span><span class="p">:</span> <span class="p">[</span>
-  <span class="s">"string"</span>
-<span class="p">]</span>
-<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/pet/findByTags?tags<span class="o">=</span>string <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1003,7 +972,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/pet/findByTags'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/pet/findByTags'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="s1">'tags'</span> <span class="o">=&gt;</span> <span class="s1">'array[string]'</span>
 <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
@@ -1222,15 +1191,10 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span><span class="p">,</span>
-  <span class="s">'api_key'</span><span class="p">:</span> <span class="s">'API_KEY'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/pet/<span class="o">{</span>petId<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'api_key: API_KEY'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1240,7 +1204,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'api_key'</span> <span class="o">=&gt;</span> <span class="s1">'API_KEY'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/pet/{petId}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1352,15 +1316,10 @@ api_key
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/x-www-form-urlencoded'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/pet/<span class="o">{</span>petId<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/x-www-form-urlencoded'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1370,7 +1329,7 @@ api_key
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/pet/{petId}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1457,15 +1416,10 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'api_key'</span><span class="p">:</span> <span class="s">'string'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> DELETE https://kanot.live/pet/<span class="o">{</span>petId<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'api_key: string'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1475,7 +1429,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://petstore.swagger.io/v2/pet/{petId}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://kanot.live/pet/{petId}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1547,16 +1501,11 @@ petstore_auth ( Scopes: write:pets read:pets )
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'multipart/form-data'</span><span class="p">,</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
-  <span class="s">'Authorization'</span><span class="p">:</span> <span class="s">'Bearer {access-token}'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/pet/{petId}/uploadImage'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/pet/<span class="o">{</span>petId<span class="o">}</span>/uploadImage <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: multipart/form-data'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Authorization: Bearer {access-token}'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1567,7 +1516,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'Authorization'</span> <span class="o">=&gt;</span> <span class="s1">'Bearer {access-token}'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/pet/{petId}/uploadImage'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/pet/{petId}/uploadImage'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1660,24 +1609,17 @@ To perform this operation, you must be authenticated by means of one of the foll
 petstore_auth ( Scopes: write:pets read:pets )
 </aside>
 
-<h1 id="swagger-petstore-store">store</h1>
-
-<p>Access to Petstore orders</p>
+<h1 id="kanot-lice-api-store">store</h1>
 <h2 id='getinventory'>getInventory</h2>
 <p><a id="opIdgetInventory"></a></p>
 
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
-  <span class="s">'api_key'</span><span class="p">:</span> <span class="s">'API_KEY'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/store/inventory'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/store/inventory <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'api_key: API_KEY'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1687,7 +1629,7 @@ petstore_auth ( Scopes: write:pets read:pets )
   <span class="s1">'api_key'</span> <span class="o">=&gt;</span> <span class="s1">'API_KEY'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/store/inventory'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/store/inventory'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1760,15 +1702,10 @@ api_key
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span><span class="p">,</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/store/order'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/store/order <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1778,7 +1715,7 @@ api_key
   <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/xml'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/store/order'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/store/order'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1877,14 +1814,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/store/order/{orderId}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/store/order/<span class="o">{</span>orderId<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -1893,7 +1825,7 @@ This operation does not require authentication
   <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/xml'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/store/order/{orderId}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/store/order/{orderId}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -1988,16 +1920,13 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/store/order/{orderId}'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> DELETE https://kanot.live/store/order/<span class="o">{</span>orderId<span class="o">}</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://petstore.swagger.io/v2/store/order/{orderId}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://kanot.live/store/order/{orderId}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">}</span>
 
@@ -2058,25 +1987,16 @@ This operation does not require authentication
 This operation does not require authentication
 </aside>
 
-<h1 id="swagger-petstore-user">user</h1>
-
-<p>Operations about user</p>
-
-<p><a href="http://swagger.io">Find out more about our store</a></p>
+<h1 id="kanot-lice-api-user">user</h1>
 <h2 id='createuser'>createUser</h2>
 <p><a id="opIdcreateUser"></a></p>
 
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/user <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2085,7 +2005,7 @@ This operation does not require authentication
   <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/user'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/user'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -2159,14 +2079,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/createWithArray'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/user/createWithArray <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2175,7 +2090,7 @@ This operation does not require authentication
   <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/user/createWithArray'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/user/createWithArray'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -2249,14 +2164,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">post</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/createWithList'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> POST https://kanot.live/user/createWithList <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2265,7 +2175,7 @@ This operation does not require authentication
   <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://petstore.swagger.io/v2/user/createWithList'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">post</span> <span class="s1">'https://kanot.live/user/createWithList'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -2339,16 +2249,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/login'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span>
-  <span class="s">'username'</span><span class="p">:</span> <span class="s">'string'</span><span class="p">,</span>  <span class="s">'password'</span><span class="p">:</span> <span class="s">'string'</span>
-<span class="p">},</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/user/login?username<span class="o">=</span>string&amp;password<span class="o">=</span>string <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2357,7 +2260,7 @@ This operation does not require authentication
   <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/xml'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/user/login'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/user/login'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="s1">'username'</span> <span class="o">=&gt;</span> <span class="s1">'string'</span><span class="p">,</span>
 <span class="s1">'password'</span> <span class="o">=&gt;</span> <span class="s1">'string'</span>
@@ -2462,16 +2365,13 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/logout'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/user/logout
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/user/logout'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/user/logout'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">}</span>
 
@@ -2509,14 +2409,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Accept'</span><span class="p">:</span> <span class="s">'application/xml'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> GET https://kanot.live/user/<span class="o">{</span>username<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/xml'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2525,7 +2420,7 @@ This operation does not require authentication
   <span class="s1">'Accept'</span> <span class="o">=&gt;</span> <span class="s1">'application/xml'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">get</span> <span class="s1">'https://kanot.live/user/{username}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -2622,14 +2517,9 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">'Content-Type'</span><span class="p">:</span> <span class="s">'application/json'</span>
-<span class="p">}</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">put</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">headers</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> PUT https://kanot.live/user/<span class="o">{</span>username<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Content-Type: application/json'</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
@@ -2638,7 +2528,7 @@ This operation does not require authentication
   <span class="s1">'Content-Type'</span> <span class="o">=&gt;</span> <span class="s1">'application/json'</span>
 <span class="p">}</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">put</span> <span class="s1">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">put</span> <span class="s1">'https://kanot.live/user/{username}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">},</span> <span class="ss">headers: </span><span class="n">headers</span>
 
@@ -2725,16 +2615,13 @@ This operation does not require authentication
 <blockquote>
 <p>Code samples</p>
 </blockquote>
-<div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="s">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">)</span>
-
-<span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">json</span><span class="p">())</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># You can also use wget</span>
+curl <span class="nt">-X</span> DELETE https://kanot.live/user/<span class="o">{</span>username<span class="o">}</span>
 
 </code></pre></div><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'rest-client'</span>
 <span class="nb">require</span> <span class="s1">'json'</span>
 
-<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://petstore.swagger.io/v2/user/{username}'</span><span class="p">,</span>
+<span class="n">result</span> <span class="o">=</span> <span class="no">RestClient</span><span class="p">.</span><span class="nf">delete</span> <span class="s1">'https://kanot.live/user/{username}'</span><span class="p">,</span>
   <span class="ss">params: </span><span class="p">{</span>
   <span class="p">}</span>
 
@@ -3202,7 +3089,8 @@ This operation does not require authentication
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="python">Python</a>
+                <a href="#" data-language-name="shell">Shell</a>
+                <a href="#" data-language-name="kotlin">Kotlin</a>
                 <a href="#" data-language-name="ruby">Ruby</a>
           </div>
       </div>
