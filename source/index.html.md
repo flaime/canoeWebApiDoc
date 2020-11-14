@@ -1,5 +1,5 @@
----
-title: API Reference
+    ---
+title: API Reference linus
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
@@ -21,7 +21,7 @@ code_clipboard: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Kittn API by linus ! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -55,7 +55,7 @@ const kittn = require('kittn');
 let api = kittn.authorize('meowmeowmeow');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `meowmeowmeow_Linus` with your API key.
 
 Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
@@ -103,7 +103,7 @@ let kittens = api.kittens.get();
 [
   {
     "id": 1,
-    "name": "Fluffums",
+    "name": "Fluffums linus",
     "breed": "calico",
     "fluffiness": 6,
     "cuteness": 7
